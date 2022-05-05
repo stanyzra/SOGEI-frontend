@@ -23,6 +23,7 @@ import CreatePalestraModalDetails, {
 import { User } from '../pages/HomePageUser';
 import { EventData } from './Itens';
 import RelatoriosModalDetails from './RelatoriosModalDetails';
+import { PresentationData } from './PresentationsBox';
 
 const drawerWidth = 240;
 
@@ -32,7 +33,7 @@ interface Props {
   pages: { id: number; text: string }[];
   user: User;
   events: EventData[];
-  presentations: Presentation[];
+  presentations: PresentationData[];
 }
 
 const ResponsiveDrawerUsuarioCE: React.FC<Props> = ({

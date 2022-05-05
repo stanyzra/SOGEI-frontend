@@ -27,13 +27,14 @@ import { EventData } from './Itens';
 import AlterarPalestraModalDetails from './AlterarPalestraModalDetails';
 import '../styles/RelatorioStyles.css';
 import AlterarEventoModalDetails from './AlterarEventoModalDetails';
+import { PresentationData } from './PresentationsBox';
 
 interface Props {
   openModalDetails: boolean;
   setOpenModalDetails: React.Dispatch<React.SetStateAction<boolean>>;
   user: User;
   events: EventData[];
-  presentations: Presentation[];
+  presentations: PresentationData[];
 }
 
 export interface Presentation {
@@ -221,7 +222,7 @@ const RelatoriosModalDetails: React.FC<Props> = ({
     })
     : [];
 
-  let filteredItens2: Presentation[] = [];
+  let filteredItens2: PresentationData[] = [];
 
   filteredItens.forEach((evt) => {
     presentations.forEach((pres) => {

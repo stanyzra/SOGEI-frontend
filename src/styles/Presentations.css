@@ -1,0 +1,18 @@
+.cardImg {
+  width: 40%;
+  border-radius: 5px;
+  /* height: 100%; */
+}
+
+.cardActionsDiv {
+  justify-content: flex-start;
+  margin-left: auto;
+}
+
+.presentationBox {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow-y: scroll;
+  max-height: 450px;
+}
